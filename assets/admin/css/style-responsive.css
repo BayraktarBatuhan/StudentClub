@@ -1,0 +1,405 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+body{font-family: 'Open Sans', sans-serif;}
+table,tr,th,td{border:none}
+.table{ width: 100%; display: table;}
+.table > tbody>tr:nth-child(odd)>th,
+.table > tbody > tr:nth-child(odd) > td{background: #f9f9f9}
+.table tbody > tr > td,
+.table tbody > tr > th{padding: 10px 10px 10px 20px;}
+.table tbody > tr > td{border-top:1px solid #ddd;}
+th{text-align:left; color: #688a7e;    font-weight: bold;}
+.table > tbody > tr:hover > td, .table > tbody > tr:hover > th{background: #f5f5f5}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    
+    .table thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .table tr { border: 1px solid #ccc; }
+    
+    .table td { 
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%!important; 
+    }
+    
+    .table td:before { 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    font-weight:bold;
+    }
+    
+  .table td:before { content: attr(data-title);
+ }
+
+
+
+@media (min-width: 768px) and (max-width: 980px) {
+    /*-*/
+	.table{
+		
+		width: 100%;
+	}
+	
+    .prd-row .action {
+        right: 25px;
+    }
+
+    .hr-menu .brand{
+        width: 100%;
+    }
+
+    .hr-menu .horizontal-menu {
+        margin: 10px 0;
+    }
+
+    .hr-menu .hr-top-nav {
+        margin-top: 10px;
+        float: right;
+    }
+    .media-gal .item {
+        width: 100%;
+    }
+
+    .media-filter {
+        margin: 25px 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	
+	.table{
+		
+		width: 100%;
+	}
+	
+  .header{
+    position: relative! important;
+    margin-top: 80px ! important;
+}
+    .merge-header{
+        margin-right: 0px !important;
+    }
+.brand{
+    width: 100%;
+    float: none;
+    position: fixed;
+    top: 0px;
+    z-index: 1005;
+}
+    .sidebar-toggle-box{
+        right: 10px;
+    }
+    .top-nav{
+        margin-bottom: 20px;
+    }
+    .top-menu{
+        margin-right: 10px;
+    }
+    .wrapper{
+        margin-top: 0px;
+    }
+    ul.sidebar-menu {
+        margin-top: 0px;
+    }
+    #sidebar{
+        position: fixed !important;
+        z-index: 1002;
+        top: 80px;
+    }
+    #main-content{
+        margin-left: 0px;
+    }
+    /*calendar*/
+    .fc-button-inner {
+        padding: 0;
+    }
+    /*-*/
+    .prd-row .action {
+        right: 25px;
+    }
+
+    .weather-full-info ul li {
+        width: 15.8%;
+    }
+
+    .today-status {
+        margin-bottom: 10px;
+    }
+
+    .hr-toggle {
+        background: #32D2C9;
+        color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        height: 30px;
+        line-height: 0;
+        margin-top: -58px;
+        position: fixed;
+        right: 10px;
+        width: 30px;
+        z-index: 10000;
+    }
+
+    .hr-top-nav {
+        display: inline-block;
+        float: right;
+        margin: 10px 0;
+    }
+
+    .horizontal-menu {
+        width: 100%;
+    }
+
+    .horizontal-menu .navbar-nav > li {
+        margin-bottom: 10px;
+    }
+    .lock-wrapper {
+        padding: 0 20px;
+    }
+
+    .lock-wrapper img {
+        width: 140px;
+        height: 140px;
+        margin-top: 10px;
+    }
+
+    .lock-pwd input {
+        width: 70%;
+    }
+
+    #time {
+        font-size: 100px;
+    }
+    .media-gal .item {
+        width: 100%;
+    }
+    .media-filter {
+        margin: 25px 0;
+    }
+
+    .media-filter + .pull-right, .media-filter + .pull-right + .btn  {
+        float: left !important;
+    }
+
+
+}
+@media (max-width:767px){
+	
+	.table{
+		
+		width: 100%;
+	}
+
+    .fixed-width #container, .fixed-width #container .header {
+        width: 100%;
+    }
+
+    #sidebar{
+        margin-left:-240px;
+        -webkit-transition:all .3s ease-in-out;
+        -moz-transition:all .3s ease-in-out;
+        -o-transition:all .3s ease-in-out;
+        transition:all .3s ease-in-out;
+    }
+    .hide-left-bar {
+        margin-left:0px!important;
+    }
+    ul.sidebar-menu{
+        padding-top: 0px;
+    }
+    /*-*/
+    .prd-row .action {
+        right: 25px;
+    }
+    .lock-wrapper {
+        padding: 0 20px;
+    }
+    .lock-wrapper img {
+        width: 140px;
+        height: 140px;
+        margin-top: 10px;
+    }
+    .lock-pwd input {
+        width: 70%;
+    }
+
+    #time {
+        font-size: 100px;
+    }
+
+    .media-gal .item {
+        width: 100%;
+    }
+    .media-filter {
+        margin: 25px 0;
+    }
+
+    .media-filter + .pull-right, .media-filter + .pull-right + .btn  {
+        float: left !important;
+    }
+
+}
+@media (max-width: 479px) {
+	
+	.table{
+		
+		width: 100%;
+	}
+	
+    body{
+        margin-top:80px !important;
+    }
+    .header{
+        position: relative !important;
+
+    }
+    .merge-header{
+        margin-right: 0px !important;
+    }
+    .brand{
+        width: 100%;
+        float: none;
+        position: fixed;
+        top: 0px;
+        z-index: 1005;
+    }
+    .sidebar-toggle-box{
+        right: 10px;
+    }
+    .top-nav{
+        margin-bottom: 20px;
+    }
+    .top-menu{
+        margin-right: 10px;
+    }
+    .wrapper{
+        margin-top: 0px;
+    }
+    ul.sidebar-menu {
+        margin-top: 0px;
+    }
+    #sidebar{
+        position: fixed !important;
+        z-index: 1002;
+        top: 80px;
+    }
+    #main-content{
+        margin-left: 0px;
+    }
+    .notify-row{
+        float: none;
+    }
+    /*calendar*/
+    .fc-button-inner, .fc-button-content {
+        padding: 0;
+    }
+    .fc-header-title h2 {
+        font-size: 12px!important;
+    }
+    .fc .fc-header-space {
+        padding-left: 0;
+    }
+    .fc-state-active, .fc-state-active .fc-button-inner, .fc-state-active, .fc-button-today .fc-button-inner, .fc-state-hover, .fc-state-hover .fc-button-inner {
+        background: none repeat scroll 0 0 #FFFFFF !important;
+        color: #32323A !important;
+    }
+    .fc-state-default, .fc-state-default .fc-button-inner {
+        background: none repeat scroll 0 0 #FFFFFF !important;
+    }
+
+    /*-*/
+    .prd-row .action {
+        right: 25px;
+    }
+
+    .weather-full-info ul li {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .today-status {
+        margin-bottom: 10px;
+    }
+
+    .hr-toggle {
+        background: #32D2C9;
+        color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        height: 30px;
+        line-height: 0;
+        margin-top: -58px;
+        position: fixed;
+        right: 10px;
+        width: 30px;
+        z-index: 10000;
+    }
+
+    .hr-top-nav {
+        display: inline-block;
+        float: right;
+        margin: 10px 0;
+    }
+    .horizontal-menu {
+        width: 100%;
+    }
+
+    .horizontal-menu .navbar-nav > li {
+        margin-bottom: 10px;
+    }
+
+    .lock-wrapper {
+        padding: 0 20px;
+    }
+    .lock-wrapper img {
+        width: 100px;
+        height: 100px;
+        margin-top: -25px;
+    }
+
+    .lock-pwd input {
+        width: 70%;
+    }
+
+    #time {
+        font-size: 50px;
+    }
+
+    .lock-pwd {
+        padding: 0;
+    }
+
+    .media-gal .item {
+        width: 100%;
+    }
+
+    .media-filter {
+        margin: 5px 0;
+    }
+
+    .media-filter + .pull-right, .media-filter + .pull-right + .btn  {
+        float: left !important;
+    }
+
+    .media-filter li a {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}
+
+
